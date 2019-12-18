@@ -18,7 +18,7 @@ public class CarTest {
         Optional<String> stringOptional = Optional.ofNullable("Jerry");
 
         Optional<String> res2 = stringOptional.map((value) -> value.toUpperCase());
-        res2.isPresent(System.out::println);
+     //   res2.isPresent(System.out::println);
 
         //String result = stringOptional.map(() -> String::toUpperCase);
         System.out.println(stringOptional.map(String::toUpperCase).orElse("Jessica"));
